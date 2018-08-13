@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="parent.master.cs" Inherits="parent" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+   <form id="form1" runat="server">
+    <div>
+    
+        &nbsp;</div>
+        <table style="width: 766px; height: 653px">
+            <tr>
+                <td colspan="3" rowspan="2">
+                    <asp:Image ID="Image1" runat="server" Height="136px" ImageUrl="~/e-school_fonto.gif"
+                        Width="1115px" />&nbsp;</td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td style="width: 1px; height: 192px" valign="top">
+                    &nbsp;<asp:Menu ID="Menu1" runat="server" BackColor="PaleGreen" Font-Bold="True"
+                        Height="177px">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/home.aspx" Text="Logout" Value="Logout"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td colspan="2" style="width: 1077px; height: 192px" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <strong><span style="font-size: 16pt"></span></strong>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

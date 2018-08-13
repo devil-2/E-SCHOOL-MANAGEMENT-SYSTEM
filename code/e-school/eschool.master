@@ -1,0 +1,59 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="eschool.master.cs" Inherits="eschool" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table width="100%">
+            <tr>
+                <td colspan="3" style="height: 92px">
+                    <asp:Image ID="Image1" runat="server" Height="136px" ImageUrl="~/e-school_fonto.gif" Width="950px" /></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 83px">
+                    <asp:Menu ID="Menu2" runat="server" BackColor="AntiqueWhite" BorderColor="Maroon"
+                        Font-Bold="True" Font-Names="Arial" Font-Size="Large" ForeColor="OrangeRed" Height="38px" Width="950px"
+                        Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="HOME" Value="Home" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="ABOUT US" Value="News" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="ADMISSIONS" NavigateUrl="~/admissions.aspx" Value="ADMISSIONS"></asp:MenuItem>
+                            <asp:MenuItem Text="CONTACT US" Value="Contact us" NavigateUrl="~/contactus.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ADMIN.aspx" Text="ADMINISTRATOR" Value="ADMINISTRATOR">
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" style="width: 10%">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="MediumAquamarine" Font-Bold="True"
+                        Font-Names="Arial" Font-Size="Large" Height="458px" ItemWrap="True" Width="116px"
+                        ForeColor="ActiveCaption">
+                        <Items>
+                            <asp:MenuItem Text="Parent Zone" Value="Parent Zone" NavigateUrl="~/parentzone.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Exam Zone" Value="Exam Zone" NavigateUrl="~/Examslist.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Holiday List" Value="Vacancies" NavigateUrl="~/holidaysList.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="F.A.Q" Value="F.A.Q" NavigateUrl="~/faq.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Default2.aspx" Text="Class timetable" Value="Discussion board">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/sugesstion.aspx" Text="View Feedback" Value="sugettions">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Give Feedback" Value="Give Feedback" NavigateUrl="~/complaintbox.aspx">
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td width="90%" colspan="2" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
